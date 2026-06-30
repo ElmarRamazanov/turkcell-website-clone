@@ -5,24 +5,22 @@ function Header() {
   const [language, setLanguage] = useState('turkce')
 
   return (
-    <header className="w-full bg-[#0C4BA0] text-white text-xs font-medium">
-      <div className="max-w-6xl mx-auto px-4 h-9 flex justify-between items-center">
+    <header className="w-[1905px] h-[33.03px] bg-[#0C4BA0] text-white text-xs font-medium">
+      <div className="w-[1220px] mx-auto h-full flex justify-between items-center px-2.5">
         {/* Left side: Account Type Selection */}
         <div className="flex items-center gap-2">
           <button
             onClick={() => setAccountType('bireysel')}
-            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${
-              accountType === 'bireysel' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
-            }`}
+            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${accountType === 'bireysel' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
+              }`}
           >
             Bireysel
           </button>
           <span className="opacity-40 text-[10px]">|</span>
           <button
             onClick={() => setAccountType('kurumsal')}
-            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${
-              accountType === 'kurumsal' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
-            }`}
+            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${accountType === 'kurumsal' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
+              }`}
           >
             Kurumsal
           </button>
@@ -32,18 +30,16 @@ function Header() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setLanguage('turkce')}
-            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${
-              language === 'turkce' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
-            }`}
+            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${language === 'turkce' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
+              }`}
           >
             Türkçe
           </button>
           <span className="opacity-40 text-[10px]">|</span>
           <button
             onClick={() => setLanguage('english')}
-            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${
-              language === 'english' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
-            }`}
+            className={`cursor-pointer transition-all duration-200 focus:outline-hidden hover:text-[#ffe000] ${language === 'english' ? 'opacity-100 font-bold' : 'opacity-60 hover:opacity-100'
+              }`}
           >
             English
           </button>
