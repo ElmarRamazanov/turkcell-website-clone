@@ -25,9 +25,9 @@ const phonesData = [
 ]
 
     return (
-        <section className="w-[1905px]">
-            <div className="w-305 mx-auto">
-                <div className="w-300 flex flex-row justify-between items-stretch">
+        <section className="w-full px-4">
+            <div className="max-w-[1220px] w-full mx-auto">
+                <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-stretch gap-8">
                     {phonesData.map((phone) => (
                         <div key={phone.phoneModel} className="w-full max-w-71.25 h-[364.48px] flex flex-col rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden bg-white cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
                             {/*Phone head*/}
@@ -57,7 +57,7 @@ const phonesData = [
                         </div>
                     ))}
                 </div>
-                <div className="w-300 h-4.75 flex justify-center items-center mx-auto mt-12 mb-12">
+                <div className="max-w-[1200px] w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12">
                         <a href="" className="text-[#184392] py-2 px-8 text-[12px] rounded-full border border-[#184392] cursor-pointer transition-all duration-300 ease-in hover:bg-[#184392] hover:text-white">Tümünü Göster</a>
           </div>
             </div>

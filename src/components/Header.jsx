@@ -5,8 +5,8 @@ function Header() {
   const [language, setLanguage] = useState('turkce')
 
   return (
-    <header className="w-[1905px] h-[33.03px] bg-[#0C4BA0] text-white text-xs font-medium">
-      <div className="w-[1220px] mx-auto h-full flex justify-between items-center px-2.5">
+    <header className="w-full h-[33.03px] bg-[#0C4BA0] text-white text-xs font-medium">
+      <div className="max-w-305 w-full mx-auto h-full flex justify-between items-center px-4">
         {/* Left side: Account Type Selection */}
         <div className="flex items-center gap-2">
           <button

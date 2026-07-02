@@ -199,12 +199,12 @@ function Navbar() {
 
   return (
     <div className="relative">
-      <nav className="w-[1905px] h-[61.75px] bg-[#2855AC] text-white shadow-md px-2.5 relative z-50">
-        <div className="w-[1220px] mx-auto h-full flex items-center justify-between gap-4">
+      <nav className="w-full h-[61.75px] bg-[#2855AC] text-white shadow-md px-2.5 relative z-50">
+        <div className="max-w-305 w-full mx-auto h-full flex items-center justify-between gap-4">
 
           {/* Left Section: Logo & Primary Nav Links */}
           <div className="flex items-center gap-8 flex-1">
-            <a href="#" className="flex-shrink-0 flex items-center">
+            <a href="#" className="shrink-0 flex items-center">
               <img
                 src={logo}
                 alt="Turkcell Logo"
@@ -328,7 +328,7 @@ function Navbar() {
           onMouseEnter={handleDropdownEnter}
           onMouseLeave={handleDropdownLeave}
         >
-          <div className="w-305 ml-105 px-2.5 py-6">
+          <div className="max-w-305 w-full mx-auto px-4 py-6">
             {dropdownData[activeMenu].type === "columns" ? (
               /* Çok sütunlu layout - Alışveriş Merkezi */
               <div className="flex gap-8">
@@ -407,7 +407,7 @@ function Navbar() {
           ========================================== */}
       {isSearchOpen && (
         <div className="absolute left-0 w-full bg-white z-40 shadow-xl animate-dropdown border-t border-gray-100">
-          <div className="w-305 mx-auto px-2.5 py-10 flex flex-col items-center">
+          <div className="max-w-305 w-full mx-auto px-4 py-10 flex flex-col items-center">
             {/* Başlık */}
             <h2 className="text-[#253342] text-[28px] font-bold text-center mb-6">
               Hoş Geldiniz
@@ -452,7 +452,7 @@ function Navbar() {
           ========================================== */}
       {isLoginOpen && (
         <div className="absolute left-0 w-full bg-white z-40 shadow-xl animate-dropdown border-t border-gray-100">
-          <div className="w-305 mx-auto px-2.5 py-8 flex justify-center">
+          <div className="max-w-305 w-full mx-auto px-4 py-8 flex justify-center">
             
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 w-212 flex overflow-hidden">
               {/* Sol taraf: illüstrasyon ve açıklama */}

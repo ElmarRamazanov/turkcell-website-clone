@@ -1,7 +1,7 @@
 function SuperBox() {
   return (
-    <section className="flex justify-center items-center  w-[1905px] h-48 pt-7.5 pb-3.75 mb-12">
-        <div className="w-300 h-39 bg-[url('https://www.kktcell.com/Files/Banners/Ana_Sayfa_Basvuru_Banner/superbox_ontalep__1_.png')] bg-cover bg-center rounded-2xl bg-no-repeat">
+    <section className="flex justify-center items-center w-full h-48 pt-7.5 pb-3.75 mb-12 px-4">
+      <div className="max-w-300 w-full h-39 bg-[url('https://www.kktcell.com/Files/Banners/Ana_Sayfa_Basvuru_Banner/superbox_ontalep__1_.png')] bg-cover bg-center rounded-2xl bg-no-repeat">
         <div className="flex justify-between items-center h-full w-full text-white text-center px-12">
             <div className="flex flex-col justify-center items-start">
             <span className="text-2xl font-bold">4.5G Kalitesiyle Superbox Fırsatını Kaçırma</span>
