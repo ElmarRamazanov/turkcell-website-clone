@@ -2,7 +2,9 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import SuperBox from './components/SuperBox'
-import HeadBlock from './components/HeadBlock'
+import ShopSection from './components/ShopSection'
+import HeadNew from './components/HeadNew'
+import SmartPhoneSection from './components/SmartPhoneSection'
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Navbar />
       <Hero />
       <SuperBox />
-      <HeadBlock />
-      
+      <ShopSection />
+      <HeadNew/>
+      <SmartPhoneSection/>
     </>
   )
 }
