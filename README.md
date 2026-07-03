@@ -25,21 +25,6 @@ It is created for **educational and practice purposes only**. All design rights 
 - JavaScript (ES6+)
 - Vite
 
----
-
-## 📂 Project Structure
-
-src/
-├── components/
-│ ├── Header/
-│ ├── Hero/
-│ ├── LeftPopUp/
-│ └── ...
-├── App.jsx
-└── main.jsx
-
----
-
 ## ⚙️ Installation & Setup
 
 ```bash
@@ -47,3 +32,9 @@ git clone https://github.com/your-username/your-project-name.git
 cd your-project-name
 npm install
 npm run dev
+
+---
+
+Live Demo: https://turkcell-website-clone.vercel.app/
+
+---
