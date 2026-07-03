@@ -31,9 +31,9 @@ const slides = [
 
 
 function MiddleHero() {
-    return (
+  return (
 
-    <div className="hero-slider relative">
+    <div className="hero-slider relative z-30">
       <Swiper
         spaceBetween={20}
         centeredSlides={true}
@@ -60,7 +60,7 @@ function MiddleHero() {
 
               <div className="hero-slide-content">
                 <h2 className="hero-slide-title">{slide.title}</h2>
-                 <span className="hero-slide-description">{slide.description}</span>
+                <span className="hero-slide-description">{slide.description}</span>
                 <button className="hero-slide-button">{slide.buttonText}</button>
               </div>
             </div>
@@ -74,7 +74,7 @@ function MiddleHero() {
     </div>
 
 
-    )
+  )
 }
 
 export default MiddleHero

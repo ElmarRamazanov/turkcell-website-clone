@@ -27,9 +27,9 @@ const phonesData = [
     return (
         <section className="w-full px-4">
             <div className="max-w-305 w-full mx-auto">
-                <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-stretch gap-8">
+                <div className="w-full flex lg:flex-nowrap justify-start lg:justify-between items-stretch gap-6 overflow-x-auto pb-8 pt-4 px-4 snap-x snap-mandatory hide-scrollbar">
                     {phonesData.map((phone) => (
-                        <div key={phone.phoneModel} className="w-full max-w-71.25 h-[364.48px] flex flex-col rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden bg-white cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
+                        <div key={phone.phoneModel} className="shrink-0 snap-center w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] h-[364.48px] flex flex-col rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden bg-white cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
                             {/*Phone head*/}
                             <div className="flex items-center justify-between px-3.75 h-12.5 relative">
                                 <div className="flex items-center min-w-0 font-bold pl-2 pr-20">

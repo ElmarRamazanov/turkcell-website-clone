@@ -1,90 +1,114 @@
-function TopFooter() {
+import { useState } from 'react';
 
-const footerLinks = [
-    {
-        title: "Hakkımızda",
-        links: [
-            { name: "Genel Bakış", href: "#" },
-            { name: "İnsan Kaynakları", href: "#" },
-            { name: "Haberler", href: "#" },
-            { name: "İletişim", href: "#" },
-            { name: "Sürdürülebilirlik", href: "#" },
-            { name: "Sosyal Sorumluluk", href: "#" },
-        ]
-    },
-    {
-        title: "Turkcell Alışveriş Merkezi",
-        links: [
-            { name: "Yaz Fırsatı", href: "#" },
-            { name: "Ev & Yaşam", href: "#" },
-            { name: "Kulaklıklar", href: "#" },
-            { name: "Oyun Konsolları", href: "#" },
-            { name: "Televizyonlar", href: "#" },
-            { name: "Android Telefonlar", href: "#" },
-            { name: "Apple Telefonlar", href: "#" },
-            { name: "5G Destekli Telefonlar", href: "#" },
-        ]
-    },
-    {
-        title: "İnternet",
-        links: [
-            { name: "Superbox", href: "#" },
-            { name: "Mobil İnternet", href: "#" },
-            { name: "Turkcell Ev İnterneti", href: "#" },
-        ]
-    },
-    {
-        title: "Paketler",
-        links: [
-            { name: "Faturalı 4.5G", href: "#" },
-            { name: "Platinum 4.5G", href: "#" },
-            { name: "GNÇ", href: "#" },
-            { name: "Turkcell Çocuk", href: "#" },
-            { name: "Faturalı Hatta Geçiş" , href: "#" },
-            { name: "Faturasız", href: "#" },
-            { name: "Yurt Dışını Arama", href: "#" },
-            { name: "Yurt Dışında Kullanım", href: "#" },
-        ]
-    },
-    {
-        title: "Özel Sayfalar",
-        links: [
-            { name: "5G", href: "#" },
-            { name: "4.5G", href: "#" },
-            { name: "Akıllı Ev Çözümleri", href: "#" },
-            { name: "Sarı Sandık Extra", href: "#" },
-            { name: "Turkcell Platinum", href: "#" },
-            { name: "Gnç", href: "#" },
-            { name: "Paycell", href: "#" },
-            { name: "Superbox", href: "#" },
-            { name: "Mobil Aidat", href: "#" },
-            { name: "Turkcell Blog", href: "#" },
-        ]
-    },
-    {
-        title: "Yardım",
-        links: [
-            { name: "4.5G", href: "#" },
-            { name: "Kanallarımız", href: "#" },
-            { name: "Hattınız", href: "#" },
-            { name: "Yurt Dışı", href: "#" },
-            { name: "Yardım Araçları", href: "#" },
-            { name: "Turkcell'li Olmak", href: "#" },
-            { name: "Cihazlar", href: "#" }
-        ]
-    }
-]
+function TopFooter() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleSection = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const footerLinks = [
+        {
+            title: "Hakkımızda",
+            links: [
+                { name: "Genel Bakış", href: "#" },
+                { name: "İnsan Kaynakları", href: "#" },
+                { name: "Haberler", href: "#" },
+                { name: "İletişim", href: "#" },
+                { name: "Sürdürülebilirlik", href: "#" },
+                { name: "Sosyal Sorumluluk", href: "#" },
+            ]
+        },
+        {
+            title: "Turkcell Alışveriş Merkezi",
+            links: [
+                { name: "Yaz Fırsatı", href: "#" },
+                { name: "Ev & Yaşam", href: "#" },
+                { name: "Kulaklıklar", href: "#" },
+                { name: "Oyun Konsolları", href: "#" },
+                { name: "Televizyonlar", href: "#" },
+                { name: "Android Telefonlar", href: "#" },
+                { name: "Apple Telefonlar", href: "#" },
+                { name: "5G Destekli Telefonlar", href: "#" },
+            ]
+        },
+        {
+            title: "İnternet",
+            links: [
+                { name: "Superbox", href: "#" },
+                { name: "Mobil İnternet", href: "#" },
+                { name: "Turkcell Ev İnterneti", href: "#" },
+            ]
+        },
+        {
+            title: "Paketler",
+            links: [
+                { name: "Faturalı 4.5G", href: "#" },
+                { name: "Platinum 4.5G", href: "#" },
+                { name: "GNÇ", href: "#" },
+                { name: "Turkcell Çocuk", href: "#" },
+                { name: "Faturalı Hatta Geçiş" , href: "#" },
+                { name: "Faturasız", href: "#" },
+                { name: "Yurt Dışını Arama", href: "#" },
+                { name: "Yurt Dışında Kullanım", href: "#" },
+            ]
+        },
+        {
+            title: "Özel Sayfalar",
+            links: [
+                { name: "5G", href: "#" },
+                { name: "4.5G", href: "#" },
+                { name: "Akıllı Ev Çözümleri", href: "#" },
+                { name: "Sarı Sandık Extra", href: "#" },
+                { name: "Turkcell Platinum", href: "#" },
+                { name: "Gnç", href: "#" },
+                { name: "Paycell", href: "#" },
+                { name: "Superbox", href: "#" },
+                { name: "Mobil Aidat", href: "#" },
+                { name: "Turkcell Blog", href: "#" },
+            ]
+        },
+        {
+            title: "Yardım",
+            links: [
+                { name: "4.5G", href: "#" },
+                { name: "Kanallarımız", href: "#" },
+                { name: "Hattınız", href: "#" },
+                { name: "Yurt Dışı", href: "#" },
+                { name: "Yardım Araçları", href: "#" },
+                { name: "Turkcell'li Olmak", href: "#" },
+                { name: "Cihazlar", href: "#" }
+            ]
+        }
+    ];
 
     return (
         <footer className="w-full bg-[#2658AE] text-white border-b border-[#78A0E2]">
             <div className="mx-auto flex w-full max-w-310 flex-col justify-between gap-10 px-6 py-9 lg:flex-row lg:items-start">
-                <div className="grid flex-1 grid-cols-2 gap-x-8 gap-y-8 md:grid-cols-3 lg:grid-cols-6">
+                <div className="grid flex-1 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-0 md:gap-y-8">
                     {footerLinks.map((section, index) => (
-                        <div key={index}>
-                            <h4 className="mb-3 text-[14px] font-bold">{section.title}</h4>
-                            <ul className="space-y-1.5">
-                                {section.links.map((link, index) => (
-                                    <li key={index}>
+                        <div key={index} className="border-b border-[#78A0E2]/50 md:border-none">
+                            <h4 
+                                className="py-4 md:py-0 md:mb-3 text-[14px] font-bold flex justify-between items-center cursor-pointer md:cursor-auto"
+                                onClick={() => {
+                                    if (window.innerWidth < 768) {
+                                        toggleSection(index);
+                                    }
+                                }}
+                            >
+                                {section.title}
+                                <svg 
+                                    className={`w-4 h-4 transition-transform md:hidden ${openIndex === index ? 'rotate-180' : ''}`} 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h4>
+                            <ul className={`space-y-1.5 overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-[500px] pb-4 opacity-100' : 'max-h-0 opacity-0 md:max-h-[500px] md:opacity-100'}`}>
+                                {section.links.map((link, idx) => (
+                                    <li key={idx}>
                                         <a href={link.href} className="text-[11px] text-white transition-opacity hover:underline">
                                             {link.name}
                                         </a>
@@ -94,7 +118,7 @@ const footerLinks = [
                         </div>
                     ))}
                 </div>
-                <div className="w-full lg:max-w-72.5">
+                <div className="w-full lg:max-w-72.5 md:pt-6 lg:pt-0">
                     <h4 className="mb-3 text-[12px] font-bold">Bizi Takip Edin</h4>
                     <div className="mb-7 flex items-center justify-start gap-3">
                             <a href="#" aria-label="Facebook">

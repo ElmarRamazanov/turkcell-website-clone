@@ -109,29 +109,29 @@ function ShopSection() {
 
   return (
     <section className="w-full">
-      <div className="mx-auto my-5 flex flex-wrap items-center justify-center gap-6 md:gap-16 px-4">
+      <div className="mx-auto my-5 flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-16 px-2">
         <h1
           onClick={() => setActiveTab("ev")}
-          className={`relative pb-1 text-xl font-bold cursor-pointer ${activeTab === "ev"
+          className={`relative pb-1 text-[12px] sm:text-xl font-bold cursor-pointer text-center ${activeTab === "ev"
             ? "text-[#0C4BA0] border-b-4 border-[#0C4BA0]"
             : "text-[#50545B] border-b-4 border-transparent"
             }`}
         >
           TURKCELL EV INTERNETI
           {activeTab === "ev" && (
-            <span className="absolute left-1/2 top-full h-0 w-0 -translate-x-1/2 border-r-20 border-l-20 border-t-12 border-r-transparent border-l-transparent border-t-[#0C4BA0]" />
+            <span className="absolute left-1/2 top-full h-0 w-0 -translate-x-1/2 border-r-[10px] border-l-[10px] border-t-[8px] sm:border-r-20 sm:border-l-20 sm:border-t-12 border-r-transparent border-l-transparent border-t-[#0C4BA0]" />
           )}
         </h1>
         <h1
           onClick={() => setActiveTab("tarife")}
-          className={`relative pb-1 text-xl font-bold cursor-pointer ${activeTab === "tarife"
+          className={`relative pb-1 text-[12px] sm:text-xl font-bold cursor-pointer text-center ${activeTab === "tarife"
             ? "text-[#0C4BA0] border-b-4 border-[#0C4BA0]"
             : "text-[#50545B] border-b-4 border-transparent"
             }`}
         >
           TARIFE VE PAKETLER
           {activeTab === "tarife" && (
-            <span className="absolute left-1/2 top-full h-0 w-0 -translate-x-1/2 border-r-20 border-l-20 border-t-12 border-r-transparent border-l-transparent border-t-[#0C4BA0]" />
+            <span className="absolute left-1/2 top-full h-0 w-0 -translate-x-1/2 border-r-[10px] border-l-[10px] border-t-[8px] sm:border-r-20 sm:border-l-20 sm:border-t-12 border-r-transparent border-l-transparent border-t-[#0C4BA0]" />
           )}
         </h1>
       </div>
@@ -140,16 +140,16 @@ function ShopSection() {
       {activeTab === "ev" && (
         <>
           <div className="max-w-305 w-full justify-center mx-auto overflow-visible mt-10 px-4">
-            <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center gap-8">
+            <div className="w-full flex lg:flex-nowrap justify-start lg:justify-between items-center gap-6 overflow-x-auto pb-8 pt-4 px-4 snap-x snap-mandatory hide-scrollbar">
               {homeInternetData.map((item, index) => (
-                <div key={index} className="w-70 h-96 shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
+                <div key={index} className="shrink-0 snap-center w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] h-96 shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
                   {/* Card Head */}
-                  <div className="w-73 h-25.75 bg-[#0C4BA0] flex flex-col justify-center items-baseline text-white rounded-b-[100%_25px]">
+                  <div className="w-full h-25.75 bg-[#0C4BA0] flex flex-col justify-center items-baseline text-white rounded-b-[100%_25px]">
                     <h4 className="text-lg font-semibold px-5">{item.packetName}</h4>
                     <span className="text-sm font-semibold px-5">{item.packetType}</span>
                   </div>
                   {/* Card Body */}
-                  <div className="w-70 h-44.25 bg-white px-4 relative flex flex-col">
+                  <div className="w-full h-44.25 bg-white px-4 relative flex flex-col">
                     <div>
                       <div className="w-62 h-[74.92px] mt-4">
                         <svg
@@ -164,11 +164,11 @@ function ShopSection() {
                       <div></div>
                     </div>
                   </div>
-                  <div className="w-70 h-9 bg-[#D9D9D944] border-y border-[#68686826] flex justify-baseline items-center text-[#4d4d4d] text-sm font-semibold pl-6">
+                  <div className="w-full h-9 bg-[#D9D9D944] border-y border-[#68686826] flex justify-baseline items-center text-[#4d4d4d] text-sm font-semibold pl-6">
                     <span className="">{item.description}</span>
                   </div>
                   {/* Card Footer */}
-                  <div className="w-70 h-17 flex items-center justify-between box-border px-4">
+                  <div className="w-full h-17 flex items-center justify-between box-border px-4">
                     <div className="w-19 h-14.25 flex flex-col mt-3 pb-3">
                       <span className="w-[66.38px] h-4.75 font-bold text-xl">
                         {item.price}
@@ -181,7 +181,7 @@ function ShopSection() {
               ))}
             </div>
           </div>
-           <div className="max-w-300 w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
+          <div className="max-w-300 w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
             <a href="" className="text-[#184392] py-2 px-8 text-[12px] rounded-full border border-[#184392] cursor-pointer transition-all duration-300 ease-in hover:bg-[#184392] hover:text-white">Tümünü Göster</a>
           </div>
         </>
@@ -191,9 +191,9 @@ function ShopSection() {
       {activeTab === "tarife" && (
         <>
           <div className="max-w-305 w-full justify-center mx-auto overflow-visible mt-10 px-4">
-            <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-start gap-8">
+            <div className="w-full flex lg:flex-nowrap justify-start lg:justify-between items-stretch gap-6 overflow-x-auto pb-8 pt-4 px-4 snap-x snap-mandatory hide-scrollbar">
               {packetData.map((item, index) => (
-                <div key={index} className="w-70 shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl bg-white flex flex-col cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
+                <div key={index} className="shrink-0 snap-center w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl bg-white flex flex-col cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
                   {/* Card Header - Yellow */}
                   <div className="relative bg-[#FFE600] px-5 pt-4 pb-7 rounded-b-[100%_20px]">
                     {/* Badge */}

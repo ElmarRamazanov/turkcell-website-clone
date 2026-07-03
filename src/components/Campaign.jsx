@@ -23,9 +23,9 @@ const campaigns = [
   return (
     <section className="w-full px-4">
             <div className="max-w-305 w-full mx-auto">
-                <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-stretch gap-8">
+                <div className="w-full flex lg:flex-nowrap justify-start lg:justify-between items-stretch gap-6 overflow-x-auto pb-8 pt-4 px-4 snap-x snap-mandatory hide-scrollbar">
                     {campaigns.map((campaign) => (
-                        <div key={campaign.title} className="w-full max-w-71.25 h-[364.48px] flex flex-col rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden bg-white cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
+                        <div key={campaign.title} className="shrink-0 snap-center w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] h-[364.48px] flex flex-col rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden bg-white cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
                             {/*Campaign title*/}
                             <div className="flex items-center justify-start text-center p-3.75 whitespace-nowrap w-full">
                                 <h3 className="text-lg text-[#253646] font-bold text-center truncate ">{campaign.title}</h3>
