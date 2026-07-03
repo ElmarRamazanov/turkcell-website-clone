@@ -1,46 +1,49 @@
-📡 KKTCELL Ana Sayfa Clone (React + Tailwind)
+# 📡 KKTCELL Homepage Clone (React + Tailwind)
 
-🇹🇷 Türkçe
+This project is a **frontend clone of the Kuzey Kıbrıs Turkcell (KKTCELL) homepage**, built using **React and Tailwind CSS**.
 
-Bu proje, Kuzey Kıbrıs Turkcell (KKTCELL) ana sayfasının kullanıcı arayüzünü React ve Tailwind CSS kullanarak yeniden oluşturmak amacıyla geliştirilmiştir.
+It is created for **educational and practice purposes only**. All design rights belong to the original company.
 
-Sadece eğitim ve pratik amaçlı yapılmıştır. Orijinal marka ve tasarım hakları ilgili şirkete aittir.
+---
 
-🚀 Özellikler
-⚛️ React ile component tabanlı yapı
-🎨 Tailwind CSS ile modern ve responsive tasarım
-📱 Mobil uyumlu layout
-🧩 Reusable UI component’ler
-✨ Hover animasyonları ve interaktif efektler
-📌 Fixed sidebar popup bileşenleri
-⚡ Performans odaklı basit yapı
+## 🚀 Features
 
-Kullanılan Teknolojiler
-React
-Tailwind CSS
-JavaScript (ES6+)
-Vite
+- ⚛️ React component-based architecture
+- 🎨 Tailwind CSS modern styling
+- 📱 Fully responsive design
+- 🧩 Reusable UI components
+- ✨ Hover animations & interactive effects
+- 📌 Fixed sidebar popup UI elements
+- ⚡ Lightweight and fast structure
 
-Proje Yapısı
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript (ES6+)
+- Vite
+
+---
+
+## 📂 Project Structure
+
 src/
- ├── components/
- │    ├── Header/
- │    ├── HeroSection/
- │    ├── LeftPopUp/
- │    └── ...
- ├── App.jsx
- └── main.jsx
+├── components/
+│ ├── Header/
+│ ├── Hero/
+│ ├── LeftPopUp/
+│ └── ...
+├── App.jsx
+└── main.jsx
 
+---
 
- ⚙️ Kurulum
+## ⚙️ Installation & Setup
 
-Projeyi çalıştırmak için:
-
-git clone https://github.com/kullanici-adi/proje-adi.git
-cd proje-adi
+```bash
+git clone https://github.com/your-username/your-project-name.git
+cd your-project-name
 npm install
 npm run dev
-
-📌 Notlar
-
-Bu proje ticari amaçlı değildir. Sadece frontend geliştirme becerilerini geliştirmek için yapılmıştır.
