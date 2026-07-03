@@ -35,7 +35,6 @@ npm run dev
 
 
 
----
-##Live Demo
-https://turkcell-website-clone.vercel.app/
----
+## 🌐 Live Demo
+
+👉 https://turkcell-website-clone.vercel.app/
