@@ -29,6 +29,7 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .hero-slide {
@@ -65,6 +66,15 @@ body {
   line-height: 1.08;
   letter-spacing: -0.02em;
   font-weight: 800;
+}
+
+
+.hero-slide-description {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 .hero-slide-button {

@@ -139,7 +139,7 @@ function ShopSection() {
       {/* ==================== EV İNTERNETİ TAB ==================== */}
       {activeTab === "ev" && (
         <>
-          <div className="max-w-[1220px] w-full justify-center mx-auto overflow-visible mt-10 px-4">
+          <div className="max-w-305 w-full justify-center mx-auto overflow-visible mt-10 px-4">
             <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center gap-8">
               {homeInternetData.map((item, index) => (
                 <div key={index} className="w-70 h-96 shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
@@ -181,7 +181,7 @@ function ShopSection() {
               ))}
             </div>
           </div>
-           <div className="max-w-[1200px] w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
+           <div className="max-w-300 w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
             <a href="" className="text-[#184392] py-2 px-8 text-[12px] rounded-full border border-[#184392] cursor-pointer transition-all duration-300 ease-in hover:bg-[#184392] hover:text-white">Tümünü Göster</a>
           </div>
         </>
@@ -190,7 +190,7 @@ function ShopSection() {
       {/* ==================== TARİFE VE PAKETLER TAB ==================== */}
       {activeTab === "tarife" && (
         <>
-          <div className="max-w-[1220px] w-full justify-center mx-auto overflow-visible mt-10 px-4">
+          <div className="max-w-305 w-full justify-center mx-auto overflow-visible mt-10 px-4">
             <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-start gap-8">
               {packetData.map((item, index) => (
                 <div key={index} className="w-70 shadow-[0_8px_24px_rgba(0,0,0,0.28)] overflow-hidden rounded-xl bg-white flex flex-col cursor-pointer transition-all duration-300 ease-in hover:shadow-[0_0_36px_rgba(0,0,0,0.48)]">
@@ -225,7 +225,7 @@ function ShopSection() {
                           <span className="text-[22px] font-bold text-[#1a1a1a]">{item.socialMediaAmount}</span>
                           <span className="text-[11px] font-semibold text-[#1a1a1a]">{item.socialMediaGB}</span>
                         </div>
-                        <span className="text-[9px] text-[#888] uppercase mt-1 leading-tight font-semibold tracking-wide max-w-[65px]">SOSYAL MEDYADA GEÇERLİ İNTERNET</span>
+                        <span className="text-[9px] text-[#888] uppercase mt-1 leading-tight font-semibold tracking-wide max-w-16.25">SOSYAL MEDYADA GEÇERLİ İNTERNET</span>
                       </div>
 
                       {/* Call */}
@@ -235,7 +235,7 @@ function ShopSection() {
                           <span className="text-[22px] font-bold text-[#1a1a1a]">{item.callAmount}</span>
                           <span className="text-[11px] font-semibold text-[#1a1a1a]">{item.callTime.toUpperCase()}</span>
                         </div>
-                        <span className="text-[9px] text-[#888] uppercase mt-1 leading-tight font-semibold tracking-wide max-w-[65px]">YURT İÇİ, TÜRKİYE VE YURT DIŞI YÖNLERİNE*</span>
+                        <span className="text-[9px] text-[#888] uppercase mt-1 leading-tight font-semibold tracking-wide max-w-16.25">YURT İÇİ, TÜRKİYE VE YURT DIŞI YÖNLERİNE*</span>
                       </div>
                     </div>
 
@@ -267,7 +267,7 @@ function ShopSection() {
               ))}
             </div>
           </div>
-          <div className="max-w-[1200px] w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
+          <div className="max-w-300 w-full h-4.75 flex justify-center items-center mx-auto mt-12 mb-12 px-4">
             <a href="" className="text-[#184392] py-2 px-8 text-[12px] rounded-full border border-[#184392] cursor-pointer transition-all duration-300 ease-in hover:bg-[#184392] hover:text-white">Tümünü Göster</a>
           </div>
         </>

@@ -5,6 +5,12 @@ import SuperBox from './components/SuperBox'
 import ShopSection from './components/ShopSection'
 import HeadNew from './components/HeadNew'
 import SmartPhoneSection from './components/SmartPhoneSection'
+import MiddleHero from './components/MiddleHero'
+import Campaign from './components/Campaign'
+import TopFooter from './components/TopFooter'
+import MidFooter from './components/MidFooter'
+import BottomFooter from './components/BottomFooter'
+import LeftPopUp from './components/LeftPopUp'
 
 function App() {
   return (
@@ -13,9 +19,17 @@ function App() {
       <Navbar />
       <Hero />
       <SuperBox />
+      <LeftPopUp />
       <ShopSection />
-      <HeadNew/>
+      <HeadNew title="AKILLI CİHAZLAR" />
       <SmartPhoneSection/>
+      <MiddleHero/>
+      <HeadNew title="Kampanyalar" />
+      <Campaign/>
+      <TopFooter/>
+      <MidFooter/>
+      <BottomFooter/>
+      
     </>
   )
 }
